@@ -121,18 +121,18 @@ export default function PriceRight() {
   };
 
   /* ── SHARED WRAPPERS ── */
-  const Root = ({ ch, cx }) => (
+  const Root = ({ children, cx }) => (
     <div style={{ minHeight:"100vh", background:C.bg, fontFamily:"'DM Sans',sans-serif", color:C.text, display:"flex", flexDirection:"column", alignItems:"center", justifyContent: cx ? "center" : "flex-start", position:"relative", overflow:"hidden" }}>
       <Head>
         <title>PriceRight — Price Your Art with Confidence</title>
         <meta name="description" content="AI-powered pricing engine for working artists. Get data-backed pricing that reflects your actual market value — no guesswork, no second-guessing." />
       </Head>
       <style dangerouslySetInnerHTML={{ __html: CSS }} />
-      {ch}
+      {children}
     </div>
   );
   const Lbl = ({ ch }) => (
-    <div style={{ fontSize:11, fontWeight:600, color:C.muted, textTransform:"uppercase", letterSpacing:1.2, marginBottom:8 }}>{ch}</div>
+    <div style={{ fontSize:11, fontWeight:600, color:C.muted, textTransform:"uppercase", letterSpacing:1.2, marginBottom:8 }}>{children}</div>
   );
 
   /* ═══════════════════════════════════════════════════════════════
