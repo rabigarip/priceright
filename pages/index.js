@@ -131,7 +131,7 @@ export default function PriceRight() {
       {children}
     </div>
   );
-  const Lbl = ({ ch }) => (
+  const Lbl = ({ children }) => (
     <div style={{ fontSize:11, fontWeight:600, color:C.muted, textTransform:"uppercase", letterSpacing:1.2, marginBottom:8 }}>{children}</div>
   );
 
