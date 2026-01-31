@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: priceright
+    env: node
+    buildCommand: npm install && next build
+    startCommand: next start -p $PORT
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: NODE_ENV
+        value: production
